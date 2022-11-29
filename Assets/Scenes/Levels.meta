@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/TextMesh Pro/Examples & Extras/Materials.meta
+guid: 7ff01711e7010404fad0c7cdc1b54d88
+========
 guid: 57fa137aeee4d064ab95a3092def1e32
+>>>>>>>> b4a37fcb9bfa75f69c44c98becac19de693d3bb1:Assets/Scenes/Levels.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
