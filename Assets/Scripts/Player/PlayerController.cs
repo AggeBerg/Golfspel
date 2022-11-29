@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour{
     [SerializeField] private GameObject ShootingCam;
     [SerializeField] private Rigidbody rb;
 
-    private bool isShooting = true;
+    public bool isShooting = true;
     private void Update() {
         if(isShooting) ShootUpdate();
 
