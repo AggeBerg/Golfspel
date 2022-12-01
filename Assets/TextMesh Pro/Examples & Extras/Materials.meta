@@ -1,5 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/TextMesh Pro/Examples & Extras/Materials.meta
+guid: 0c59ec91651c41449a0b5843f18b0c1c
+========
+guid: 57fa137aeee4d064ab95a3092def1e32
+>>>>>>>> b4a37fcb9bfa75f69c44c98becac19de693d3bb1:Assets/Scenes/Levels.meta
+=======
+<<<<<<< HEAD
+guid: c52f0a57d0f310143928ca401dcf8a1c
+=======
 guid: 814d6580b9a6ddc4c92159ab1536deba
+>>>>>>> 463adb8509dc156734955f3121e43ac9675458cd
+>>>>>>> b4a37fcb9bfa75f69c44c98becac19de693d3bb1
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
