@@ -20,6 +20,7 @@ public class Pair<T, U> {
 public class PlayerController : MonoBehaviour{
 
     [SerializeField] private float playerSpeed;
+    [SerializeField] private float decelerate_p;
     [SerializeField] private float ShootRotateSpeed;
     [SerializeField] private float camAutoRotateSpeed;
     [SerializeField] private GameObject ShootingCam;
@@ -29,21 +30,23 @@ public class PlayerController : MonoBehaviour{
     [SerializeField] private float cameraDelay;
     private Queue<Pair<Vector3, float>> positionHistory = new();
     private bool lastStill = false;
-    public bool isShooting = true;
+    public bool isShooting = false;
 
     private void Update() {
-        // Debug.Log(rb.velocity.magnitude);
-        isShooting = (0.8f > rb.velocity.magnitude && lastStill);
-        lastStill = (0.8f > rb.velocity.magnitude);
+        Debug.Log(Mathf.Sqrt(Mathf.Pow(rb.velocity.x, 2)+ Mathf.Pow(rb.velocity.z, 2)));
+        isShooting = (0.4f > rb.velocity.magnitude && lastStill);
+        lastStill = (0.4f > rb.velocity.magnitude);
         CameraUpdate();
 
         if(isShooting) ShootUpdate();
+        else rb.velocity = new Vector3(rb.velocity.x- rb.velocity.x*decelerate_p*Time.deltaTime, rb.velocity.y, rb.velocity.z - rb.velocity.z * decelerate_p * Time.deltaTime);
         // rb.velocity = new Vector3(Input.GetAxis("Horizontal")*playerSpeed, rb.velocity.y, Input.GetAxis("Vertical")*playerSpeed);
     }
 
 
     private void ShootUpdate() {
-        rb.velocity = Vector3.zero;
+        rb.velocity = new Vector3(0f, rb.velocity.y, 0f);
+        // rb.velocity = Vector3.zero;
         ShootingCam.transform.RotateAround(transform.position, new Vector3(0, 1, 0), Input.GetAxis("Horizontal")* ShootRotateSpeed * Time.deltaTime);
     }
     private void CameraUpdate() {
@@ -65,6 +68,10 @@ public class PlayerController : MonoBehaviour{
 
             ShootingCam.transform.RotateAround(transform.position, new Vector3(0, 1, 0), Mathf.Lerp(0f, angle - angle2, camAutoRotateSpeed * Time.deltaTime) * Mathf.Pow(rb.velocity.magnitude, 0.8f));
         }
+    }
+
+    public void HitScore() {
+        Debug.Log("Score");
     }
 
 }
