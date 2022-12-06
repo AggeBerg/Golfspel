@@ -22,7 +22,6 @@ public class PauseSinglePlayer : MonoBehaviour
     }
 
     public void CloseMenu(){
-        Debug.Log("Ta bort");
         Destroy(clone);
         Time.timeScale=1;
         menuIsOpen = false;

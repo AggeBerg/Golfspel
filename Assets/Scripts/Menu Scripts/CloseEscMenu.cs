@@ -12,7 +12,6 @@ public class CloseEscMenu : MonoBehaviour
     public void SelfDestruct(){
 
         player = GameObject.Find("/Player");
-        Debug.Log(player);
         player.GetComponent<PauseSinglePlayer>().CloseMenu();
     }
 }

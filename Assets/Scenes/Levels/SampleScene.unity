@@ -1930,6 +1930,18 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 921963158872894191, guid: ec8c57c64c2417d47821745bbb4e7768, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 921963159619020983, guid: ec8c57c64c2417d47821745bbb4e7768, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 921963159855045693, guid: ec8c57c64c2417d47821745bbb4e7768, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8449596398880760900, guid: ec8c57c64c2417d47821745bbb4e7768, type: 3}
       propertyPath: m_Name
       value: courseHole
@@ -2581,6 +2593,9 @@ MonoBehaviour:
   GoalMenuObject: {fileID: 1516916614}
   cameraDelay: 0.1
   isShooting: 1
+  obstacle:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!54 &5690025919108964369
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2821,7 +2836,7 @@ Transform:
   - {fileID: 5690025918738377691}
   m_Father: {fileID: 4558665526358489326}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 7.41, y: -0.762, z: 0}
 --- !u!1 &6431128007975388078
 GameObject:
   m_ObjectHideFlags: 0
