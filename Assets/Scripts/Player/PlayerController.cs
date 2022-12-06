@@ -26,13 +26,17 @@ public class PlayerController : MonoBehaviour{
     [SerializeField] private GameObject ShootingCam;
     [SerializeField] private Transform camOffsetTransform;
     [SerializeField] private Rigidbody rb;
+    [SerializeField] private GameObject GoalMenuObject;
 
     [SerializeField] private float cameraDelay;
     private Queue<Pair<Vector3, float>> positionHistory = new();
     private bool lastStill = false;
     public bool isShooting = false;
 
+    [NonSerialized] private bool inGoal = false;
+
     private void Update() {
+        if(inGoal) return;
         Debug.Log(Mathf.Sqrt(Mathf.Pow(rb.velocity.x, 2)+ Mathf.Pow(rb.velocity.z, 2)));
         isShooting = (0.4f > rb.velocity.magnitude && lastStill);
         lastStill = (0.4f > rb.velocity.magnitude);
@@ -71,7 +75,8 @@ public class PlayerController : MonoBehaviour{
     }
 
     public void HitScore() {
-        Debug.Log("Score");
+        inGoal = true; 
+        GoalMenuObject.SetActive(true);
     }
 
 }

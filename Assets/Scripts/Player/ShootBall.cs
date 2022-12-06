@@ -26,7 +26,7 @@ public class ShootBall : MonoBehaviour {
     
 
     private void Start() {
-        rb.drag = ballDrag;
+        rb.angularDrag = ballDrag;
         CurrentScoreText = CurrentScoreObject.GetComponent<TextMeshProUGUI>();
     }
 
