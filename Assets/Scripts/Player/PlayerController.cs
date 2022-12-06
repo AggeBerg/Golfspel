@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour{
 
     private void Update() {
         if(inGoal) return;
-        Debug.Log(Mathf.Sqrt(Mathf.Pow(rb.velocity.x, 2)+ Mathf.Pow(rb.velocity.z, 2)));
+        // Debug.Log(Mathf.Sqrt(Mathf.Pow(rb.velocity.x, 2)+ Mathf.Pow(rb.velocity.z, 2)));
         isShooting = (0.4f > rb.velocity.magnitude && lastStill);
         lastStill = (0.4f > rb.velocity.magnitude);
         CameraUpdate();
