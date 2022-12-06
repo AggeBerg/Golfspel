@@ -1,7 +1,9 @@
 using Cinemachine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net;
+using TMPro;
 using UnityEngine;
 
 public class ShootBall : MonoBehaviour {
@@ -16,10 +18,16 @@ public class ShootBall : MonoBehaviour {
 
     Vector3 mouseStartPos = new();
     private bool startedShoot = false;
-    public float charge = 0.0f;
+    [NonSerialized] public float charge = 0.0f;
+    [NonSerialized] public int amountOfShoots = 0;
+
+    [SerializeField] private GameObject CurrentScoreObject;
+     private TextMeshProUGUI CurrentScoreText;
+    
 
     private void Start() {
         rb.angularDrag = ballDrag;
+        CurrentScoreText = CurrentScoreObject.GetComponent<TextMeshProUGUI>();
     }
 
     private void Update() {
@@ -30,7 +38,6 @@ public class ShootBall : MonoBehaviour {
         shootUI.SetActive(true);
 
         if(Input.GetKeyDown(KeyCode.Mouse0)) {
-            // Debug.Log("start");
             mouseStartPos = Input.mousePosition;
             startedShoot = true;
         }
@@ -39,13 +46,14 @@ public class ShootBall : MonoBehaviour {
         // man kanske kan lägga till skruvning ifall man flyttar musen åt sidan
         Vector3 mouseReleasePos = Input.mousePosition; 
         charge = Mathf.Min(100f, dragModifier*Mathf.Max(0f, mouseStartPos.y-mouseReleasePos.y));
-        // Debug.Log(charge);
         if(Input.GetKeyUp(KeyCode.Mouse0)) {
-            // Debug.Log("release");
             rb.velocity = cameraTransform.transform.forward * ballSpeed * charge/100; 
             rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z); // just nu används inte y värdet man skulle kunna ändra den
             charge = 0f;
-            // playerController.isShooting = false;
+            amountOfShoots++;
+            CurrentScoreText.text = amountOfShoots.ToString();
+
+            playerController.isShooting = false;
             startedShoot = false;
         }
     }
