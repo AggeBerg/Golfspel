@@ -1,13 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PauseSinglePlayer : MonoBehaviour
 {
-    // Start is called before the first frame update
     public GameObject escapeMenu;
     public GameObject UIParent;
-    public bool menuIsOpen = false;
+    [NonSerialized] public bool menuIsOpen = false;
     private GameObject clone;
     void Start()
     {
@@ -22,6 +22,7 @@ public class PauseSinglePlayer : MonoBehaviour
     }
 
     public void CloseMenu(){
+        Debug.Log("Ta bort");
         Destroy(clone);
         Time.timeScale=1;
         menuIsOpen = false;
