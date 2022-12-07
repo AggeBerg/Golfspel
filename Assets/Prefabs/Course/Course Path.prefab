@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4247793946130000847}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall Pieces
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 6735731640938752258}
   - component: {fileID: 7759843440559895492}
   - component: {fileID: 1468616493000688125}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2307571809041365792}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Course Path
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 7443107111315291081}
   - component: {fileID: 189435094965903629}
   - component: {fileID: 6514622637926167123}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 2050501695815009990}
   - component: {fileID: 816822170770849650}
   - component: {fileID: 925823689669455607}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 688095986827836805}
   - component: {fileID: 688095986827836804}
   - component: {fileID: 688095986827836807}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: startPlate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 688095987604652177}
   - component: {fileID: 688095987604652176}
   - component: {fileID: 688095987604652179}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 688095987905538100}
   - component: {fileID: 688095987905538103}
   - component: {fileID: 688095987905538102}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 688095988102335198}
   - component: {fileID: 688095988102335193}
   - component: {fileID: 688095988102335192}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -397,7 +397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 688095988213908988}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: startBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,7 +434,7 @@ GameObject:
   - component: {fileID: 688095988545348614}
   - component: {fileID: 688095988545348609}
   - component: {fileID: 688095988545348608}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -528,7 +528,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6149198830342059909}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall Pieces
   m_TagString: Untagged
   m_Icon: {fileID: 0}

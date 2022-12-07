@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4112354865102824870}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall Pieces
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 190711611946950222}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: courseHole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 5736238890640371916}
   - component: {fileID: 4223596943776558099}
   - component: {fileID: 1758854685993236590}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 2659068519486786496}
   - component: {fileID: 3649095076968294836}
   - component: {fileID: 1959002660821116718}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4654265740976224642}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GolfFlag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 8423667106059739879}
   - component: {fileID: 944543205780100217}
   - component: {fileID: 8655281735389694118}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -379,7 +379,7 @@ GameObject:
   - component: {fileID: 4124895594335702949}
   - component: {fileID: 1077246414975190570}
   - component: {fileID: 3945661134624879479}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -475,7 +475,7 @@ GameObject:
   - component: {fileID: 7049255019203154723}
   - component: {fileID: 7049255019203154721}
   - component: {fileID: 7049255019203154720}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitHoleTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -534,7 +534,7 @@ GameObject:
   - component: {fileID: 1994778784722910766}
   - component: {fileID: 7649463947019056033}
   - component: {fileID: 8718774242264443387}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -631,7 +631,7 @@ GameObject:
   - component: {fileID: 1994778784822872740}
   - component: {fileID: 7649463947116201771}
   - component: {fileID: 8718774242428181873}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -728,7 +728,7 @@ GameObject:
   - component: {fileID: 1994778784092473596}
   - component: {fileID: 7649463946403890547}
   - component: {fileID: 8718774243175358249}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
