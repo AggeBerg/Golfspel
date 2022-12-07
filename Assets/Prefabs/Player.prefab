@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547997850637135554}
-  m_LocalRotation: {x: 0.06487003, y: -0.006631491, z: 0.0004311026, w: 0.99787164}
+  m_LocalRotation: {x: 0.06487003, y: -0.0066315252, z: 0.00043110483, w: 0.99787164}
   m_LocalPosition: {x: 0, y: 1.5, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -397,7 +397,7 @@ GameObject:
   - component: {fileID: 6408314699365655935}
   - component: {fileID: 513024075591542696}
   - component: {fileID: 1574030609495161574}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BarHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &3540315666502162969
+--- !u!1 &3377929151398293132
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -470,23 +470,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3540315666502163046}
-  - component: {fileID: 3540315666502163044}
-  - component: {fileID: 3540315666502163047}
-  m_Layer: 0
+  - component: {fileID: 3377929151398293235}
+  - component: {fileID: 3377929151398293233}
+  - component: {fileID: 3377929151398293234}
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &3540315666502163046
+--- !u!224 &3377929151398293235
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3540315666502162969}
+  m_GameObject: {fileID: 3377929151398293132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -500,21 +500,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &3540315666502163044
+--- !u!222 &3377929151398293233
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3540315666502162969}
+  m_GameObject: {fileID: 3377929151398293132}
   m_CullTransparentMesh: 1
---- !u!114 &3540315666502163047
+--- !u!114 &3377929151398293234
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3540315666502162969}
+  m_GameObject: {fileID: 3377929151398293132}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -610,7 +610,7 @@ GameObject:
   - component: {fileID: 794052753108695277}
   - component: {fileID: 5351137105853483412}
   - component: {fileID: 794052753108695276}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ShootUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -726,7 +726,7 @@ GameObject:
   - component: {fileID: 6819881389407642345}
   - component: {fileID: 6819881389407642347}
   - component: {fileID: 6819881389407642346}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -861,7 +861,7 @@ GameObject:
   - component: {fileID: 6819881389525522976}
   - component: {fileID: 6819881389525522983}
   - component: {fileID: 6819881389525522982}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -995,7 +995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6819881389626581739}
   - component: {fileID: 6819881389626581732}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GoalMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1052,7 +1052,7 @@ GameObject:
   - component: {fileID: 6819881390691405619}
   - component: {fileID: 6819881390691405581}
   - component: {fileID: 6819881390691405580}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1129,7 +1129,7 @@ GameObject:
   - component: {fileID: 6819881390855518244}
   - component: {fileID: 6819881390855518251}
   - component: {fileID: 6819881390855518250}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NextLevel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1263,7 +1263,7 @@ GameObject:
   - component: {fileID: 6819881391076816558}
   - component: {fileID: 6819881391076816557}
   - component: {fileID: 6819881391076816556}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1282,7 +1282,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3540315666502163046}
+  - {fileID: 3377929151398293235}
   m_Father: {fileID: 6819881389626581739}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1396,7 +1396,7 @@ GameObject:
   - component: {fileID: 6819881391244204943}
   - component: {fileID: 6819881391244204937}
   - component: {fileID: 6819881391244204936}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1531,7 +1531,7 @@ GameObject:
   - component: {fileID: 7054528009333774560}
   - component: {fileID: 7054528009333774566}
   - component: {fileID: 7054528009333774567}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PowerBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1639,7 +1639,7 @@ GameObject:
   - component: {fileID: 8901139783314411733}
   - component: {fileID: 8901139783314411739}
   - component: {fileID: 8901139783314411732}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CurrentScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1775,7 +1775,7 @@ GameObject:
   - component: {fileID: 8901139783791816739}
   - component: {fileID: 8901139783791816732}
   - component: {fileID: 8901139783791816733}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GeneralPlayerUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
