@@ -39,8 +39,8 @@ public class PlayerController : MonoBehaviour{
     private void Update() {
         if(inGoal) return;
         // Debug.Log(Mathf.Sqrt(Mathf.Pow(rb.velocity.x, 2)+ Mathf.Pow(rb.velocity.z, 2)));
-        isShooting = (0.6f > rb.velocity.magnitude && lastStill);
-        lastStill = (0.6f > rb.velocity.magnitude);
+        isShooting = (0.7f > rb.velocity.magnitude && lastStill);
+        lastStill = (0.7f > rb.velocity.magnitude);
         CameraUpdate();
 
         if(isShooting) ShootUpdate();
@@ -79,20 +79,19 @@ public class PlayerController : MonoBehaviour{
         Vector4 vec = ShootingCam.transform.position - transform.position;
         Debug.DrawRay(transform.position, dir*vec.magnitude, Color.green);
         Vector3 dirLower = new Vector3(dir.x, dir.y-0.15f, dir.z);
-        Debug.DrawRay(transform.position, dirLower*vec.magnitude, Color.red);
-        Debug.DrawRay(transform.position, dir*vec.magnitude, Color.green);
+        dir = new Vector3(dir.x, dir.y-0.05f, dir.z);
+        //Debug.DrawRay(transform.position, dirLower*vec.magnitude, Color.red);
+        //Debug.DrawRay(transform.position, dir*vec.magnitude, Color.green);
         if(Physics.Raycast(transform.position, dir, vec.magnitude, obstacle)) {
-            ShootingCam.transform.RotateAround(transform.position, new Vector3(1, 0, 1), Time.deltaTime * 40f);
+            dir = new Vector3(dir.x, 0f, dir.z);
+            if(dir.magnitude < 0.7f) return;
+            ShootingCam.transform.position = new Vector3(ShootingCam.transform.position.x-dir.x/dir.magnitude*Time.deltaTime, ShootingCam.transform.position.y+Time.deltaTime, ShootingCam.transform.position.z - dir.z / dir.magnitude * Time.deltaTime);
             return;
-            //Debug.Log("Blocked");
         }
-        Debug.Log(ShootingCam.transform.position.y - transform.position.y);
-        if(!Physics.Raycast(transform.position, dirLower, vec.magnitude, obstacle) && ShootingCam.transform.position.y-transform.position.y > 0.6f) {
-            Debug.Log("Ner");
-            ShootingCam.transform.RotateAround(transform.position, new Vector3(1, 0, 1), Time.deltaTime * -40f);
-            //Debug.Log("Blocked");
+        if(!Physics.Raycast(transform.position, dirLower, vec.magnitude, obstacle) && ShootingCam.transform.position.y-transform.position.y > 0.8f) {
+            dir = new Vector3(dir.x, 0f, dir.z);
+            ShootingCam.transform.position = new Vector3(ShootingCam.transform.position.x + dir.x / dir.magnitude * Time.deltaTime, ShootingCam.transform.position.y-Time.deltaTime, ShootingCam.transform.position.z + dir.z / dir.magnitude * Time.deltaTime);
         }
-        //else Debug.Log("Free");
     }
 
     public void HitScore() {
