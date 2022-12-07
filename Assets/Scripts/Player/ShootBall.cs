@@ -49,6 +49,10 @@ public class ShootBall : MonoBehaviour {
         if(Input.GetKeyUp(KeyCode.Mouse0)) {
             rb.velocity = cameraTransform.transform.forward * ballSpeed * charge/100; 
             rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z); // just nu används inte y värdet man skulle kunna ändra den
+            if(charge == 0f) {
+                charge = 0f;
+                return;
+            };
             charge = 0f;
             amountOfShoots++;
             CurrentScoreText.text = amountOfShoots.ToString();
