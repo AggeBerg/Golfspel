@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 829237242058575017}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall Pieces
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 268236043932599493}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Course Turn 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 9134693306491590375}
   - component: {fileID: 5192179133964422177}
   - component: {fileID: 4026009142639771160}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 7938861040049039244}
   - component: {fileID: 6864506116005356751}
   - component: {fileID: 1658760919149837943}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall Angle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 4969134417465508908}
   - component: {fileID: 2386856264081465064}
   - component: {fileID: 8779281294574751158}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 2042621792580055029}
   - component: {fileID: 3910047088495573732}
   - component: {fileID: 5316180177996925670}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Corner Piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 4596498992450337059}
   - component: {fileID: 2948516869627642007}
   - component: {fileID: 3415976652720640274}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
