@@ -7,13 +7,13 @@ using UnityEngine;
 public class PlayerBounds : MonoBehaviour
 {
     private float playerMin = 2.0f;
+    private Rigidbody BallSpeed;
     Vector3 PrePosition;
     Rigidbody someRigidbody;
 
     public void Start()
     {
         PrePosition = transform.position;
-        Debug.Log(PrePosition);
         BallSpeed = GetComponent<Rigidbody>();
     }
 
@@ -21,7 +21,6 @@ public class PlayerBounds : MonoBehaviour
     public void setPrePosition()
     {
         PrePosition = transform.position;
-        Debug.Log(PrePosition);
         BallSpeed = GetComponent<Rigidbody>();
     }  
 
@@ -31,7 +30,6 @@ public class PlayerBounds : MonoBehaviour
         if (transform.position.y < playerMin)
         {    
             transform.position = PrePosition;
-            Debug.Log(transform.position);
             BallSpeed.velocity = new Vector3(0, 0, 0);
         }        
     }
