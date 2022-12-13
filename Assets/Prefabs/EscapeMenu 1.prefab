@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2940020513016890534}
   - component: {fileID: 3461709605147805891}
   - component: {fileID: 4756241247279510052}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: EscapeMenu 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!1001 &2292442601114407077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -194,9 +194,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4177716622472727848, guid: f0bdeef440a429b4f8bc13554101b545, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950179543260024477, guid: f0bdeef440a429b4f8bc13554101b545, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6367335436445148784, guid: f0bdeef440a429b4f8bc13554101b545, type: 3}
       propertyPath: m_Name
       value: Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367335436445148784, guid: f0bdeef440a429b4f8bc13554101b545, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867119602821355585, guid: f0bdeef440a429b4f8bc13554101b545, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
