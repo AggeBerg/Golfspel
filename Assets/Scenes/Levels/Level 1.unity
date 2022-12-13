@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414736, b: 0.12107852, a: 1}
+  m_IndirectSpecularColor: {r: 0.18388064, g: 0.22880112, b: 0.30179843, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,8 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1001 &6944750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8308,7 +8306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!182 &885361622
 WindZone:
   m_ObjectHideFlags: 0
@@ -9196,7 +9194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7498861197711854922, guid: 532799e33efc2c0419a1a84feb0c093d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7519999
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 7498861197711854922, guid: 532799e33efc2c0419a1a84feb0c093d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12849,6 +12847,10 @@ PrefabInstance:
     - target: {fileID: 1176034961004055851, guid: ce9778027c068d74cb7c40a231bb601b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8515826881169387023, guid: ce9778027c068d74cb7c40a231bb601b, type: 3}
+      propertyPath: ballSpeed
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -21074,4 +21076,3 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ec78ebca7517fb745a45a931cb06d2bd, type: 3}
->>>>>>> bb206fec5774c4c153c7322b215eb0ccceca41b0

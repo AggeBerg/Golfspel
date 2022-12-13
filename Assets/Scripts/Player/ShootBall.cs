@@ -13,8 +13,10 @@ public class ShootBall : MonoBehaviour {
     [SerializeField] private GameObject shootUI;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private float dragModifier;
-    [SerializeField] private float ballSpeed;
+    [SerializeField] public float ballSpeed;
     [SerializeField] private float ballDrag;
+
+    public PlayerBounds bounds;
 
     Vector3 mouseStartPos = new();
     private bool startedShoot = false;
@@ -47,6 +49,7 @@ public class ShootBall : MonoBehaviour {
         Vector3 mouseReleasePos = Input.mousePosition; 
         charge = Mathf.Min(100f, dragModifier*Mathf.Max(0f, mouseStartPos.y-mouseReleasePos.y));
         if(Input.GetKeyUp(KeyCode.Mouse0)) {
+            bounds.setPrePosition();
             rb.velocity = cameraTransform.transform.forward * ballSpeed * charge/100; 
             rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z); // just nu används inte y värdet man skulle kunna ändra den
             if(charge == 0f) {

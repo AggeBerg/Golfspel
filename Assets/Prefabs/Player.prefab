@@ -192,6 +192,7 @@ GameObject:
   - component: {fileID: 1176034960966307197}
   - component: {fileID: 1176034960966307196}
   - component: {fileID: 8515826881169387023}
+  - component: {fileID: 658611571356410916}
   m_Layer: 0
   m_Name: Movable
   m_TagString: Untagged
@@ -338,6 +339,19 @@ MonoBehaviour:
   ballSpeed: 40
   ballDrag: 1
   CurrentScoreObject: {fileID: 8901139783314411734}
+--- !u!114 &658611571356410916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176034960966307199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a42866f223ec0c44a134a0331e16c69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider: {fileID: 0}
 --- !u!1 &1176034961004055850
 GameObject:
   m_ObjectHideFlags: 0
