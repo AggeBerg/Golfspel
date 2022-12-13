@@ -271,7 +271,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176034960966307199}
-  m_Material: {fileID: 13400000, guid: dd1426ec9e9ea794997bf4207db1bc76, type: 2}
+  m_Material: {fileID: 13400000, guid: 98b99fd7a2a2bc746ae7fecaa457803d, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -370,7 +370,7 @@ Transform:
   - {fileID: 1176034960966307185}
   - {fileID: 1176034959974641164}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9211746051943228526
 MonoBehaviour:
