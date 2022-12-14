@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEditor;
 using UnityEngine;
 
@@ -50,6 +51,14 @@ public class PlayerController : MonoBehaviour{
 
 
     private void ShootUpdate() {
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        {
+            ShootRotateSpeed = 100f;
+        }
+        else
+        {
+            ShootRotateSpeed = 40f;
+        }
         rb.velocity = new Vector3(0f, rb.velocity.y, 0f);
         transform.rotation = Quaternion.Euler(0, 0, 0);
         // rb.velocity = Vector3.zero;
@@ -77,7 +86,7 @@ public class PlayerController : MonoBehaviour{
 
         Vector3 dir = (ShootingCam.transform.position - transform.position).normalized;
         Vector4 vec = ShootingCam.transform.position - transform.position;
-        Debug.DrawRay(transform.position, dir*vec.magnitude, Color.green);
+        //Debug.DrawRay(transform.position, dir*vec.magnitude, Color.green);
         Vector3 dirLower = new Vector3(dir.x, dir.y-0.15f, dir.z);
         dir = new Vector3(dir.x, dir.y-0.01f, dir.z);
         //Debug.DrawRay(transform.position, dirLower*vec.magnitude, Color.red);
