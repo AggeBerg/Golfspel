@@ -2030,6 +2030,7 @@ GameObject:
   - component: {fileID: 8767342181036758885}
   - component: {fileID: 2294458383223895062}
   - component: {fileID: 7636353255379489915}
+  - component: {fileID: 7456799393520593058}
   m_Layer: 0
   m_Name: Movable
   m_TagString: Untagged
@@ -2175,6 +2176,7 @@ MonoBehaviour:
   dragModifier: 0.3
   ballSpeed: 40
   ballDrag: 1
+  bounds: {fileID: 0}
   PuttSound: {fileID: 7636353255269246422}
   CurrentScoreObject: {fileID: 1332772653725207247}
 --- !u!114 &7636353255379489915
@@ -2190,6 +2192,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitEffect: {fileID: 7636353255778056808}
+--- !u!114 &7456799393520593058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8767342181036758886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a42866f223ec0c44a134a0331e16c69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8767342182556398614
 GameObject:
   m_ObjectHideFlags: 0
