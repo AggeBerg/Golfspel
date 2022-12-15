@@ -31,6 +31,7 @@ public class PlayerBounds : MonoBehaviour
         {    
             transform.position = PrePosition;
             BallSpeed.velocity = new Vector3(0, 0, 0);
+            UnityEngine.Debug.Log("Under allowed y-position");
         }        
     }
 }

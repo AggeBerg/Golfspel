@@ -62,9 +62,9 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 3919934263825991250}
   - {fileID: 4112354865102824870}
   - {fileID: 1361732557142821556}
+  - {fileID: 3919934263825991250}
   - {fileID: 4654265740976224642}
   - {fileID: 7049255019203154723}
   m_Father: {fileID: 0}
@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 3919934263825991250}
   - component: {fileID: 5736238890640371916}
   - component: {fileID: 4223596943776558099}
-  - component: {fileID: 1758854685993236590}
+  - component: {fileID: 8985357453899468908}
   m_Layer: 6
   m_Name: Cube 1
   m_TagString: Untagged
@@ -154,7 +154,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1758854685993236590
+--- !u!64 &8985357453899468908
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
