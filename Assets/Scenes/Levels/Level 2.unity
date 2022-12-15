@@ -218,7 +218,7 @@ Light:
   m_CookieSize: 1
   m_Shadows:
     m_Type: 2
-    m_Resolution: -1
+    m_Resolution: 0
     m_CustomResolution: -1
     m_Strength: 0.84
     m_Bias: 0.05
@@ -1196,7 +1196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7954245310955369688, guid: ce9778027c068d74cb7c40a231bb601b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00043108308
+      value: 0.0004310868
       objectReference: {fileID: 0}
     - target: {fileID: 8767342180973844274, guid: ce9778027c068d74cb7c40a231bb601b, type: 3}
       propertyPath: m_RootOrder
@@ -1934,7 +1934,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125402705}
-  m_LocalRotation: {x: 0.04617472, y: 0.7009128, z: -0.045565076, w: 0.71029085}
+  m_LocalRotation: {x: 0.04617472, y: 0.7009128, z: -0.045565072, w: 0.71029085}
   m_LocalPosition: {x: -37.77, y: 4.2199993, z: 36.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

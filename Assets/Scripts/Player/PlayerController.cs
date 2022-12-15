@@ -87,8 +87,8 @@ public class PlayerController : MonoBehaviour{
         Vector3 dir = (ShootingCam.transform.position - transform.position).normalized;
         Vector4 vec = ShootingCam.transform.position - transform.position;
         //Debug.DrawRay(transform.position, dir*vec.magnitude, Color.green);
-        Vector3 dirLower = new Vector3(dir.x, dir.y-0.15f, dir.z);
-        dir = new Vector3(dir.x, dir.y-0.01f, dir.z);
+        Vector3 dirLower = new Vector3(dir.x, dir.y-0.12f, dir.z);
+        dir = new Vector3(dir.x, dir.y-0.1f, dir.z);
         //Debug.DrawRay(transform.position, dirLower*vec.magnitude, Color.red);
         //Debug.DrawRay(transform.position, dir*vec.magnitude, Color.green);
         if(Physics.Raycast(transform.position, dir, vec.magnitude, obstacle)) {
