@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PlayerBounds : MonoBehaviour
 {
-    private float playerMin = 2.0f;
+    private float playerMin = 1.7f;
     private Rigidbody BallSpeed;
     Vector3 PrePosition;
     Rigidbody someRigidbody;
