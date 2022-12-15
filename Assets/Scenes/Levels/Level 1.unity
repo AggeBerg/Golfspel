@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: b95cf890db5b7104dbb15c3a8e885ff2, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -5308,6 +5308,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1349191476}
     m_Modifications:
+    - target: {fileID: 925823689669455607, guid: 7d534c72e5d0fdb488d8a7234095c1dc, type: 3}
+      propertyPath: m_Size.z
+      value: 2.999409
+      objectReference: {fileID: 0}
+    - target: {fileID: 925823689669455607, guid: 7d534c72e5d0fdb488d8a7234095c1dc, type: 3}
+      propertyPath: m_Center.z
+      value: 0.0013098717
+      objectReference: {fileID: 0}
     - target: {fileID: 2307571809041365792, guid: 7d534c72e5d0fdb488d8a7234095c1dc, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -7928,7 +7936,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3415976652720640274, guid: ea2d77d9a3488a04f8d2f8670e0de254, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ea2d77d9a3488a04f8d2f8670e0de254, type: 3}
 --- !u!4 &882878429 stripped
@@ -9256,6 +9265,18 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1349191476}
     m_Modifications:
+    - target: {fileID: 925823689669455607, guid: 7d534c72e5d0fdb488d8a7234095c1dc, type: 3}
+      propertyPath: m_Size.z
+      value: 1.9987613
+      objectReference: {fileID: 0}
+    - target: {fileID: 925823689669455607, guid: 7d534c72e5d0fdb488d8a7234095c1dc, type: 3}
+      propertyPath: m_Center.x
+      value: 1.2489314e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 925823689669455607, guid: 7d534c72e5d0fdb488d8a7234095c1dc, type: 3}
+      propertyPath: m_Center.z
+      value: -0.49938276
+      objectReference: {fileID: 0}
     - target: {fileID: 2307571809041365792, guid: 7d534c72e5d0fdb488d8a7234095c1dc, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -15793,7 +15814,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: startBlock
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 688095988102335192, guid: 737f7528566edcd4e9cd91bba616e03f, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 737f7528566edcd4e9cd91bba616e03f, type: 3}
 --- !u!1001 &1733667654
@@ -20043,10 +20065,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: courseHole
       objectReference: {fileID: 0}
+    - target: {fileID: 1361732557142821556, guid: b3e1cb80911c81947b8bc457ae53b800, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.075
+      objectReference: {fileID: 0}
     - target: {fileID: 7049255019203154720, guid: b3e1cb80911c81947b8bc457ae53b800, type: 3}
       propertyPath: WinSound
       value: 
       objectReference: {fileID: 1769458465}
+    - target: {fileID: 7049255019203154723, guid: b3e1cb80911c81947b8bc457ae53b800, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985357453899468908, guid: b3e1cb80911c81947b8bc457ae53b800, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: b3e1cb80911c81947b8bc457ae53b800, type: 3}
