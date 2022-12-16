@@ -9,6 +9,7 @@ public class LevelPreview : MonoBehaviour
 {
     public int levelIndex = 0;
     public TMP_Text UIElem;
+    public TMP_Text ParText;
     public string SelectedElement;
     public List<string> levelList = new List<string>();
 
@@ -39,8 +40,28 @@ public class LevelPreview : MonoBehaviour
     void Update()
     {
         
-        UIElem.text = levelList[levelIndex];
+        UIElem.text = levelList[levelIndex];    
         SelectedElement = levelList[levelIndex];
+
+        if(levelIndex == 0)
+        {
+            ParText.text = "4";
+        }
+
+        if (levelIndex == 1)
+        {
+            ParText.text = "5";
+        }
+
+        if (levelIndex == 2)
+        {
+            ParText.text = "6";
+        }
+
+        if (levelIndex == 3)
+        {
+            ParText.text = "4";
+        }
 
     }
 }
